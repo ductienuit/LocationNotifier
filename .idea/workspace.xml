@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe0b1a4a-7728-42ea-9c78-6b70338a0852" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_setting.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_favorites.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_favorites.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_favorite.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_favorite.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -2358,7 +2355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542476329789</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add item_setting and itemfavorite">
+      <created>1542477201186</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542477201186</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2405,7 +2409,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edit fragment" />
     <MESSAGE value="edit name layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit name layout" />
+    <MESSAGE value="add item_setting and itemfavorite" />
+    <option name="LAST_COMMIT_MESSAGE" value="add item_setting and itemfavorite" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
