@@ -23,7 +23,8 @@ public class FavoritesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_news, container, false);
+        View view =  inflater.inflate(R.layout.fragment_favorites, container, false);
+        return view;
     }
 
 }
