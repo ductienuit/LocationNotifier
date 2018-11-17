@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initFragment() {
         arrFragment.add(new FavoritesFragment());
-        arrFragment.add(new MapFragment());
+        arrFragment.add(new MapViewFragment());
         arrFragment.add(new SettingFragment());
     }
 
