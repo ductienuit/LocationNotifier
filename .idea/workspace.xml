@@ -7,30 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe0b1a4a-7728-42ea-9c78-6b70338a0852" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/LocationNotifier.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_andkulikov_transitionseverywhere_1_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_andkulikov_transitionseverywhere_1_8_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_armcha_LuseenBottomNavigation_1_8_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_armcha_LuseenBottomNavigation_1_8_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_3_1_jar.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_3_1_jar.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_3_1_jar.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_3_1_jar.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_intuit_sdp_sdp_android_1_0_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_intuit_sdp_sdp_android_1_0_6.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/trafficanalysics/ChatbotFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/trafficanalysics/SettingFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/trafficanalysics/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/trafficanalysics/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/trafficanalysics/NewsFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/trafficanalysics/FavoritesFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_chatbot.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_chatbot.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_news.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_news.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -2332,6 +2309,14 @@
       <option name="presentableId" value="Default" />
       <updated>1542471383903</updated>
     </task>
+    <task id="LOCAL-00001" summary="edit fragment">
+      <created>1542473831967</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542473831968</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2371,6 +2356,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="edit fragment" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit fragment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
