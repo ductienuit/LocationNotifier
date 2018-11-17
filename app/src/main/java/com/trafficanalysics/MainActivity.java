@@ -3,7 +3,6 @@ package com.trafficanalysics;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.view.animation.FastOutLinearInInterpolator;
 import android.support.v4.view.animation.LinearOutSlowInInterpolator;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -18,21 +17,35 @@ import com.transitionseverywhere.TransitionManager;
 import com.transitionseverywhere.TransitionSet;
 import com.transitionseverywhere.extra.Scale;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
     ActionBar toolbar;
     FrameLayout contentContainer;
+    ArrayList<Fragment> arrFragment = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initFragment();
+
         addControl();
 
         toolbar.setTitle("Lịch thi đấu");
-        loadFragment(new NewsFragment());
+
+        loadFragment(arrFragment.get(0));
     }
+
+    private void initFragment() {
+        arrFragment.add(new FavoritesFragment());
+        arrFragment.add(new MapFragment());
+        arrFragment.add(new SettingFragment());
+    }
+
     private void loadFragment(Fragment fragment) {
         // load fragment
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -73,18 +86,18 @@ public class MainActivity extends AppCompatActivity {
                 switch (index) {
                     case 0:
                         TransitionManager.beginDelayedTransition(contentContainer, set);
-                        toolbar.setTitle("News");
-                        loadFragment(new NewsFragment());
+                        toolbar.setTitle("Favorites");
+                        loadFragment(arrFragment.get(0));
                         break;
                     case 1:
                         TransitionManager.beginDelayedTransition(contentContainer, set);
-                        toolbar.setTitle("Traffic Message");
-                        loadFragment(new ChatbotFragment());
+                        toolbar.setTitle("Map");
+                        loadFragment(arrFragment.get(1));
                         break;
                     case 2:
                         TransitionManager.beginDelayedTransition(contentContainer, set);
-                        toolbar.setTitle("Map Traffic");
-                        loadFragment(new MapFragment());
+                        toolbar.setTitle("Setting");
+                        loadFragment(arrFragment.get(2));
                         break;
                 }
             }
@@ -93,11 +106,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void addNavItem() {
         BottomNavigationItem dateItem = new BottomNavigationItem
-                ("News", ContextCompat.getColor(this, R.color.colorAccent), R.drawable.ic_news);
+                ("Yêu thích", ContextCompat.getColor(this, R.color.colorPrimary), R.drawable.ic_star_border);
         BottomNavigationItem channelItem = new BottomNavigationItem
-                ("Traffic Message", ContextCompat.getColor(this, R.color.colorPrimary), R.drawable.ic_messages);
+                ("Bản đồ", ContextCompat.getColor(this, R.color.colorPrimary), R.drawable.ic_explore);
         BottomNavigationItem newItem = new BottomNavigationItem
-                ("Map Traffic", ContextCompat.getColor(this, R.color.colorPrimary), R.drawable.ic_maps);
+                ("Cài đặt", ContextCompat.getColor(this, R.color.colorPrimary), R.drawable.ic_settings);
 
         bottomNavigationView.addTab(dateItem);
         bottomNavigationView.addTab(channelItem);
