@@ -7,6 +7,7 @@ import com.here.android.mpa.search.Place;
 import com.here.android.mpa.search.PlaceLink;
 import com.here.android.mpa.search.PlaceRequest;
 import com.here.android.mpa.search.ResultListener;
+import com.trafficanalysics.LocationApplication;
 import com.trafficanalysics.MapViewFragment;
 import com.trafficanalysics.R;
 
@@ -80,15 +81,13 @@ public class ResultListActivity extends ListActivity {
         @Override
         public void onCompleted(Place place, ErrorCode errorCode) {
             if (errorCode == ErrorCode.NONE) {
-                /*
-                 * No error returned,let's show the name and location of the place that just being
-                 * selected.Additional place details info can be retrieved at this moment as well,
-                 * please refer to the HERE Android SDK API doc for details.
-                 */
+
                 m_placeDetailLayout.setVisibility(View.VISIBLE);
                 m_placeName.setText(place.getName());
-                GeoCoordinate geoCoordinate = place.getLocation().getCoordinate();
-                m_placeLocation.setText(geoCoordinate.toString());
+                LocationApplication.getInstance().geoCoordinate = place.getLocation().getCoordinate();
+                m_placeLocation.setText(LocationApplication.getInstance().geoCoordinate.toString());
+
+                onBackPressed();
             } else {
                 Toast.makeText(getApplicationContext(),
                         "ERROR:Place request returns error: " + errorCode, Toast.LENGTH_SHORT)

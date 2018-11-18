@@ -43,7 +43,9 @@ public class ResultListAdapter extends ArrayAdapter<DiscoveryResult> {
         tv.setText(discoveryResult.getTitle());
 
         tv = (TextView) convertView.findViewById(R.id.vicinity);
-        tv.setText(String.format("Vicinity: %s", discoveryResult.getVicinity()));
+        String address = discoveryResult.getVicinity();
+        String req = address.replace("<br/>",", ");
+        tv.setText(req);
         return convertView;
     }
 }

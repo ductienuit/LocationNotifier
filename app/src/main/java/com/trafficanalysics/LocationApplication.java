@@ -5,6 +5,7 @@ import android.app.Application;
 import android.content.SharedPreferences;
 
 import com.google.gson.Gson;
+import com.here.android.mpa.common.GeoCoordinate;
 import com.trafficanalysics.modal.ArrayFavorite;
 import com.trafficanalysics.modal.Favorite;
 
@@ -15,6 +16,7 @@ import java.util.ArrayList;
 public class LocationApplication extends Application {
     SharedPreferences  mInstanceShared;
     private String sharedPrefFile = "com.locationnotifier";
+    public GeoCoordinate geoCoordinate;
 
     public static final String TAG = LocationApplication.class
             .getSimpleName();
