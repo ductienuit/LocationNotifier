@@ -24,26 +24,16 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     ActionBar toolbar;
     FrameLayout contentContainer;
-    ArrayList<Fragment> arrFragment = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initFragment();
-
         addControl();
 
-        toolbar.setTitle("Lịch thi đấu");
+        loadFragment(MapViewFragment.getmInstance());
 
-        loadFragment(arrFragment.get(0));
-    }
-
-    private void initFragment() {
-        arrFragment.add(new FavoritesFragment());
-        arrFragment.add(new MapFragment());
-        arrFragment.add(new SettingFragment());
     }
 
     private void loadFragment(Fragment fragment) {
@@ -64,8 +54,6 @@ public class MainActivity extends AppCompatActivity {
             bottomNavigationView.setTextActiveSize(getResources().getDimension(R.dimen._9sdp));
             bottomNavigationView.setTextInactiveSize(getResources().getDimension(R.dimen._9sdp));
             bottomNavigationView.setItemActiveColorWithoutColoredBackground(ContextCompat.getColor(this, R.color.activeItem));
-            //bottomNavigationView.setFont(Typeface.createFromAsset(getApplicationContext().getAssets(), "fonts/"));
-
         }
 
         contentContainer = findViewById(R.id.contentContainer);
@@ -87,17 +75,18 @@ public class MainActivity extends AppCompatActivity {
                     case 0:
                         TransitionManager.beginDelayedTransition(contentContainer, set);
                         toolbar.setTitle("Favorites");
-                        loadFragment(arrFragment.get(0));
+                        loadFragment(new FavoritesFragment());
                         break;
                     case 1:
                         TransitionManager.beginDelayedTransition(contentContainer, set);
                         toolbar.setTitle("Map");
-                        loadFragment(arrFragment.get(1));
+
+                        loadFragment(MapViewFragment.getmInstance());
                         break;
                     case 2:
                         TransitionManager.beginDelayedTransition(contentContainer, set);
                         toolbar.setTitle("Setting");
-                        loadFragment(arrFragment.get(2));
+                        loadFragment(new SettingFragment());
                         break;
                 }
             }
@@ -115,5 +104,6 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.addTab(dateItem);
         bottomNavigationView.addTab(channelItem);
         bottomNavigationView.addTab(newItem);
+        bottomNavigationView.selectTab(1);
     }
 }
