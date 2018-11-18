@@ -82,11 +82,11 @@ public class ResultListActivity extends ListActivity {
         public void onCompleted(Place place, ErrorCode errorCode) {
             if (errorCode == ErrorCode.NONE) {
 
-                m_placeDetailLayout.setVisibility(View.VISIBLE);
+                //m_placeDetailLayout.setVisibility(View.VISIBLE);
                 m_placeName.setText(place.getName());
                 LocationApplication.getInstance().geoCoordinate = place.getLocation().getCoordinate();
                 m_placeLocation.setText(LocationApplication.getInstance().geoCoordinate.toString());
-
+                LocationApplication.getInstance().flag=true;
                 onBackPressed();
             } else {
                 Toast.makeText(getApplicationContext(),

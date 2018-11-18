@@ -56,7 +56,7 @@ public class FavoritesFragment extends Fragment {
 
         mAdapter = new FavoritesAdapter(R.layout.item_favorite, getContext());
         mRecyclerView.setAdapter(mAdapter);
-
+        addItem1();
         return view;
     }
 

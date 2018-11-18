@@ -17,6 +17,7 @@ public class LocationApplication extends Application {
     SharedPreferences  mInstanceShared;
     private String sharedPrefFile = "com.locationnotifier";
     public GeoCoordinate geoCoordinate;
+    public boolean flag =false;
 
     public static final String TAG = LocationApplication.class
             .getSimpleName();

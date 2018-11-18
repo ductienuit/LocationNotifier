@@ -74,18 +74,18 @@ public class MainActivity extends AppCompatActivity {
                 switch (index) {
                     case 0:
                         TransitionManager.beginDelayedTransition(contentContainer, set);
-                        toolbar.setTitle("Favorites");
+                        toolbar.setTitle("Yêu thích");
                         loadFragment(new FavoritesFragment());
                         break;
                     case 1:
                         TransitionManager.beginDelayedTransition(contentContainer, set);
-                        toolbar.setTitle("Map");
+                        toolbar.setTitle("Bản đồ");
 
                         loadFragment(MapViewFragment.getmInstance());
                         break;
                     case 2:
                         TransitionManager.beginDelayedTransition(contentContainer, set);
-                        toolbar.setTitle("Setting");
+                        toolbar.setTitle("Cài đặt");
                         loadFragment(new SettingFragment());
                         break;
                 }
